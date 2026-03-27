@@ -7,7 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "tsx watch src/server.ts",
     "start": "node build server.js",
-    "build": "tsup src --out-dir build"
+    "build": "tsup src --out-dir build",
+    "test:watch": "vitest run watch",
+    "start:test": "vitest run --ui"
   },
   "keywords": [],
   "author": "",
@@ -28,9 +30,12 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
+    "@vitest/ui": "4.0.18",
     "eslint": "9.37.0",
     "globals": "^16.4.0",
     "prisma": "6.18.0",
-    "typescript-eslint": "^8.45.0"
+    "typescript-eslint": "^8.45.0",
+    "vite-tsconfig-paths": "6.1.1",
+    "vitest": "4.0.18"
   }
 }
